@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
-
+        <variable
+            name="product"
+            type="com.example.route.domain.models.Product" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
@@ -25,6 +26,7 @@
                 android:layout_width="180dp"
                 android:layout_height="120dp"
                 android:scaleType="centerCrop"
+                imageUrl="@{product.thumbnail}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -36,6 +38,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:fontFamily="@font/poppins_medium"
+                android:text="@{product.title}"
+                tools:text="iPhone 9"
                 android:lines="1"
                 android:maxLines="1"
                 android:textColor="@color/Darkblue"
@@ -43,6 +47,21 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/product_img" />
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@{product.description}"
+                tools:text="None"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/Darkblue"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/product_name" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/add_to_wishlist_btn"
@@ -73,12 +92,13 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:text="@{product.price.toString()}"
                 android:fontFamily="@font/poppins_regular"
                 tools:text="@string/egp_1_200"
                 android:textColor="@color/Darkblue"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@id/product_name"
-                app:layout_constraintTop_toBottomOf="@id/product_name" />
+                app:layout_constraintTop_toBottomOf="@id/product_description" />
 
             <TextView
                 android:id="@+id/product_old_price"
@@ -86,6 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/poppins_regular"
+                android:text="@{product.discountPercentage.toString()}"
                 tools:text="@string/egp_1_500"
                 android:textColor="@color/pale_blue"
                 android:textSize="11sp"
@@ -111,6 +132,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="8dp"
+                android:text="@{product.rating.toString()}"
                 android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/Darkblue"
                 android:textSize="14sp"

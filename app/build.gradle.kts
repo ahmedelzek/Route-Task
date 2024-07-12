@@ -69,4 +69,6 @@ dependencies {
     implementation(libs.roundedimage)
     // picasso
     implementation(libs.picasso)
+    // glide
+    implementation(libs.glide)
 }
