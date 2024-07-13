@@ -18,13 +18,13 @@ constructor(
 ) : ViewModel() {
     var loadingLiveData = MutableLiveData<Boolean>()
     var errorMessage = MutableLiveData<ViewMessage>()
-    var prodcutListLiveData = MutableLiveData<List<Product>>()
+    var productListLiveData = MutableLiveData<List<Product>>()
     fun getAllProducts() {
         try {
             loadingLiveData.value = true
             viewModelScope.launch {
                 val listOfProduct = getProductUseCase.getALlProduct()
-                prodcutListLiveData.postValue(listOfProduct)
+                productListLiveData.postValue(listOfProduct)
                 loadingLiveData.value = false
             }
         } catch (e: Exception) {

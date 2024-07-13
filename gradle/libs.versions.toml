@@ -17,6 +17,7 @@ kotlinxCoroutinesAndroid = "1.8.1"
 fragmentKtx = "1.8.1"
 lifecycleVersion = "2.8.3"
 retrofit = "2.11.0"
+roomVersion = "2.6.1"
 shimmer="0.5.0"
 roundedImage = "2.3.0"
 picasso = "2.8"
@@ -31,6 +32,8 @@ androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtim
 androidx-lifecycle-runtime-testing = { module = "androidx.lifecycle:lifecycle-runtime-testing", version.ref = "lifecycleVersion" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleVersion" }
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomVersion" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersion" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesAndroid" }
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesAndroid" }
 picasso = { group = "com.squareup.picasso", name = "picasso", version.ref = "picasso" }
@@ -46,6 +49,7 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomVersion" }
 roundedimage={group="com.makeramen",name="roundedimageview",version.ref="roundedImage"}
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 shimmer-effect = {group="com.facebook.shimmer", name="shimmer",version.ref="shimmer"}

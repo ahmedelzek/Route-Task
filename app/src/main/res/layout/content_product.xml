@@ -25,6 +25,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
+            android:id="@+id/item_place_holder"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -45,6 +46,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/product_place_holder"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

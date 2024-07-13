@@ -50,6 +50,8 @@ class ProductsFragment : Fragment() {
                 binding.content.productsShimmerViewContainer.startShimmer()
             } else {
                 binding.content.productsShimmerViewContainer.stopShimmer()
+                binding.content.productPlaceHolder.visibility = View.GONE
+                binding.content.itemPlaceHolder.visibility = View.GONE
             }
         }
         productFragmentViewModel.errorMessage.observe(viewLifecycleOwner) {
@@ -58,7 +60,7 @@ class ProductsFragment : Fragment() {
                 message = it.message,
             )
         }
-        productFragmentViewModel.prodcutListLiveData.observe(viewLifecycleOwner) {
+        productFragmentViewModel.productListLiveData.observe(viewLifecycleOwner) {
             bindProduct(it)
         }
     }
