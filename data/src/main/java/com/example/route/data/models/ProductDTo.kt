@@ -30,7 +30,7 @@ data class ProductDTo(
 	val warrantyInformation: String? = null,
 
 	@field:SerializedName("title")
-	val title: String? = null,
+	val title: String,
 
 	@field:SerializedName("tags")
 	val tags: List<String?>? = null,

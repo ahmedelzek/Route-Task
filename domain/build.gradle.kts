@@ -37,6 +37,13 @@ android {
 
 dependencies {
 
+    implementation(libs.androidx.room.runtime)
+    // To use Kotlin annotation processing tool (kapt)
+    kapt(libs.room.compiler)
+    implementation(libs.androidx.room.ktx)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
