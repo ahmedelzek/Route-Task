@@ -55,6 +55,11 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
 
+    testImplementation(libs.mockk)
+    testImplementation(libs.mockk.android)
+    testImplementation(libs.mockk.agent)
+    testImplementation(libs.kotlinx.coroutines.test)
+
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
     implementation(project(":domain"))

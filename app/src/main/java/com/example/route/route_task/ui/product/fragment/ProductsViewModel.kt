@@ -24,8 +24,7 @@ constructor(
         loadingLiveData.value = true
         loadingLiveData.value = true
         viewModelScope.launch {
-            val result = getProductUseCase.getALlProduct()
-            when (result) {
+            when (val result = getProductUseCase.getALlProduct()) {
                 is Resource.Fail -> {
                     loadingLiveData.value = false
                     errorMessage.value = ViewMessage(

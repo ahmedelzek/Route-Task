@@ -18,6 +18,7 @@ fragmentKtx = "1.8.1"
 lifecycleVersion = "2.8.3"
 retrofit = "2.11.0"
 roomVersion = "2.6.1"
+mockkVersion = "1.13.11"
 shimmer="0.5.0"
 roundedImage = "2.3.0"
 picasso = "2.8"
@@ -50,6 +51,9 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomVersion" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockkVersion" }
+mockk-android = { module = "io.mockk:mockk-android", version.ref = "mockkVersion" }
+mockk-agent = { module = "io.mockk:mockk-agent", version.ref = "mockkVersion" }
 roundedimage={group="com.makeramen",name="roundedimageview",version.ref="roundedImage"}
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 shimmer-effect = {group="com.facebook.shimmer", name="shimmer",version.ref="shimmer"}
