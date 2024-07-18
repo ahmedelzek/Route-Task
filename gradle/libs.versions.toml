@@ -19,6 +19,7 @@ lifecycleVersion = "2.8.3"
 retrofit = "2.11.0"
 roomVersion = "2.6.1"
 mockkVersion = "1.13.11"
+rules = "1.0.2"
 shimmer="0.5.0"
 roundedImage = "2.3.0"
 picasso = "2.8"
@@ -57,6 +58,8 @@ mockk-android = { module = "io.mockk:mockk-android", version.ref = "mockkVersion
 mockk-agent = { module = "io.mockk:mockk-agent", version.ref = "mockkVersion" }
 roundedimage={group="com.makeramen",name="roundedimageview",version.ref="roundedImage"}
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+rules = { module = "com.android.support.test:rules", version.ref = "rules" }
+runner = { module = "com.android.support.test:runner", version.ref = "rules" }
 shimmer-effect = {group="com.facebook.shimmer", name="shimmer",version.ref="shimmer"}
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }

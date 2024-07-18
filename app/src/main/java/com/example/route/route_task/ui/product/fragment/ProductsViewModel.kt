@@ -23,7 +23,7 @@ constructor(
     fun getAllProducts() {
         loadingLiveData.value = true
         loadingLiveData.value = true
-        viewModelScope.launch {
+        viewModelScope.launch() {
             when (val result = getProductUseCase.getALlProduct()) {
                 is Resource.Fail -> {
                     loadingLiveData.value = false
