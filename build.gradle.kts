@@ -6,6 +6,8 @@ buildscript {
     }
     dependencies {
         classpath(libs.hilt.android.compiler)
+        classpath(libs.rules)
+        classpath(libs.runner)
     }
 }
 plugins {

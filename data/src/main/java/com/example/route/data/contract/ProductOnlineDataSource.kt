@@ -5,6 +5,5 @@ import com.example.route.domain.models.Product
 
 
 interface ProductOnlineDataSource {
-    suspend fun insertAllProducts()
     suspend fun getAllProduct(): Resource<List<Product>>
 }
